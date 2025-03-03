@@ -2,7 +2,7 @@
 title: "Unity+Wwise - 3dGameKitWwise"
 description: "A Wwise implementation of the 3dGame Kit in the Unity Engine"
 date: 2024-11-01
-draft: true
+draft: false
 tags: ["3d Game Kit", "Unity", "Wwise", "Sound Design", "Sound Effects", "Music"]
 cover:
     image: "/projects/images/0001-3dGameKitWwise/3dGameKitWwise.jpg"

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sound on Chris Latham - Technical Audio Designer</title>
-    <link>http://localhost:1313/tags/sound/</link>
+    <link>http://localhost:1313/projects/tags/sound/</link>
     <description>Recent content in Sound on Chris Latham - Technical Audio Designer</description>
     <image>
       <title>Chris Latham - Technical Audio Designer</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>http://localhost:1313/projects/images/papermod-cover.png</url>
+      <link>http://localhost:1313/projects/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sound/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/tags/sound/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wwise&#43;Wwapi - WwiseTemplateBuilder Script</title>
-      <link>http://localhost:1313/posts/0003-wwisetemplatebuilder/</link>
+      <link>http://localhost:1313/projects/posts/0003-wwisetemplatebuilder/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0003-wwisetemplatebuilder/</guid>
+      <guid>http://localhost:1313/projects/posts/0003-wwisetemplatebuilder/</guid>
       <description>A WAAPI script for importing audio into a pre-existing Wwise template</description>
     </item>
   </channel>
