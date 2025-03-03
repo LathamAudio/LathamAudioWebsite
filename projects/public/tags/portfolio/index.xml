@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Portfolio on Latham Audio</title>
+    <link>http://localhost:1313/tags/portfolio/</link>
+    <description>Recent content in Portfolio on Latham Audio</description>
+    <image>
+      <title>Latham Audio</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chris Latham&#39;s Portfolio</title>
+      <link>http://localhost:1313/posts/my-portfolio/</link>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-portfolio/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+    &lt;title&gt;Chris Latham Portofolio&lt;/title&gt;
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34; /&gt;
+    &lt;link
+      rel=&#34;stylesheet&#34;
+      href=&#34;https://cdn.linearicons.com/free/1.0.0/icon-font.min.css&#34;
+    /&gt;
+    &lt;link
+      rel=&#34;stylesheet&#34;
+      href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css&#34;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!--_____MAIN___________________________________________________________________________________--&gt;
+    &lt;main class=&#34;main&#34;&gt;
+      &lt;div class=&#34;background-gradient-area&#34;&gt;
+        &lt;div class=&#34;aboutme-container&#34;&gt;
+          &lt;!--_____ABOUT ME___________________________________________________________________________________--&gt;
+          &lt;div class=&#34;aboutme-border&#34;&gt;
+            &lt;div class=&#34;aboutme-container&#34;&gt;
+              &lt;div class=&#34;aboutme-media&#34;&gt;
+                &lt;img
+                  src=&#34;images/LathamPic_crop_85percent.jpg&#34;
+                  alt=&#34;Latham Headshot&#34;
+                /&gt;
+              &lt;/div&gt;
+              &lt;!-- &lt;/div&gt; --&gt;
+              &lt;div class=&#34;aboutme-body&#34;&gt;
+                &lt;div class=&#34;media-body&#34;&gt;
+                  &lt;div class=&#34;personal_text&#34;&gt;
+                    &lt;div class=&#34;personal_intro&#34;&gt;Hello Everybody, I am&lt;/div&gt;
+                    &lt;div class=&#34;personal_name&#34;&gt;Chris Latham&lt;/div&gt;
+                    &lt;div class=&#34;personal_role&#34;&gt;Technical Audio Designer&lt;/div&gt;
+                    &lt;div class=&#34;personal_objective&#34;&gt;
+                      From the microphone, to the game, to the speakers, I love
+                      working with amazing game development teams to realize a
+                      creative audio vision for their next project.
+                    &lt;/div&gt;
+                    &lt;div class=&#34;social-links&#34;&gt;
+                      &lt;div class=&#34;social-link&#34;&gt;
+                        &lt;a href=&#34;mailto: chris@lathamaudio.com&#34;
+                          &gt;&lt;i class=&#34;lnr lnr-envelope&#34;&gt;&lt;/i&gt;
+                          chris@lathamaudio.com&lt;/a
+                        &gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;social-link&#34;&gt;
+                        &lt;a href=&#34;latham_resume.html&#34;&gt;
+                          &lt;i class=&#34;far fa-file&#34;&gt;&lt;/i&gt; Check Out My Resume&lt;/a
+                        &gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;social-link&#34;&gt;
+                        &lt;a href=&#34;https://www.linkedin.com/in/lathamaudio/&#34;&gt;
+                          &lt;i class=&#34;fab fa-linkedin&#34;&gt;&lt;/i&gt; LinkedIn Profile&lt;/a
+                        &gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;social-link&#34;&gt;
+                        &lt;i class=&#34;lnr lnr-home&#34;&gt;&lt;/i&gt; Greater Atlanta Area &amp; Open
+                        To Remote Work
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;main-container&#34;&gt;
+        &lt;div class=&#34;recentmedia&#34;&gt;
+          &lt;h1 class=&#34;section-header&#34;&gt;DEMO REEL&lt;/h1&gt;
+          &lt;div class=&#34;demoreel-grid-container&#34;&gt;
+            &lt;div class=&#34;videos-grid-video&#34;&gt;
+              &lt;div class=&#34;videos-grid-center&#34;&gt;
+                &lt;iframe
+                  src=&#34;https://www.youtube.com/embed/lDaw3LZ2p1c?si=cNm9JLWAerHlFswi&#34;
+                  frameborder=&#34;0&#34;
+                  allow=&#34;autoplay; encrypted-media&#34;
+                  allowfullscreen
+                &gt;&lt;/iframe&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;previousreel&#34;&gt;&lt;a href=&#34;https://youtu.be/0FNSuoA9VTI?si=A8kdChsAeNtHhpmD&#34; target=&#34;_blank&#34;
+              &gt;Check out my previous demo reel!&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--_____SKILLSET___________________________________________________________________________________--&gt;
+        &lt;h1 class=&#34;section-header&#34;&gt;SKILLSET&lt;/h1&gt;
+        &lt;div class=&#34;skillset&#34;&gt;
+          &lt;section class=&#34;skillset-container&#34;&gt;
+            &lt;div class=&#34;card-container&#34;&gt;
+              &lt;div class=&#34;card-container-card&#34;&gt;
+                &lt;div class=&#34;card-container-image-container&#34;&gt;
+                  &lt;span
+                    &gt;&lt;img class=&#34;skill-image&#34; src=&#34;./images/planning.png&#34;
+                  /&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;card-container-textblock&#34;&gt;
+                  &lt;strong class=&#34;card-container-textblock-header&#34;
+                    &gt;PLANNING&lt;/strong
+                  &gt;
+                  &lt;ul class=&#34;card-container-textblock-content&#34;&gt;
+                    &lt;li&gt;Audio Pillars &amp; Goals&lt;/li&gt;
+                    &lt;li&gt;Standards &amp; Best Practices&lt;/li&gt;
+                    &lt;li&gt;Schedules &amp; Budgets&lt;/li&gt;
+                    &lt;li&gt;Organization &amp; Documentation&lt;/li&gt;
+                    &lt;li&gt;Audio Exploration &amp; Ideation&lt;/li&gt;
+                    &lt;li&gt;Audio Systems Prototyping&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;card-container-card&#34;&gt;
+                &lt;div class=&#34;card-container-image-container&#34;&gt;
+                  &lt;span
+                    &gt;&lt;img class=&#34;skill-image&#34; src=&#34;./images/design.jpg&#34;
+                  /&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;card-container-textblock&#34;&gt;
+                  &lt;strong class=&#34;card-container-textblock-header&#34;
+                    &gt;DESIGN&lt;/strong
+                  &gt;
+                  &lt;ul class=&#34;card-container-textblock-content&#34;&gt;
+                    &lt;li&gt;Field &amp; Studio Recording&lt;/li&gt;
+                    &lt;li&gt;Interactive Dialog Systems&lt;/li&gt;
+                    &lt;li&gt;Audio Synthesis &amp; Processing&lt;/li&gt;
+                    &lt;li&gt;Music Recording &amp; Production&lt;/li&gt;
+                    &lt;li&gt;Library Creation and Management&lt;/li&gt;
+                    &lt;li&gt;Immersive Soundscapes&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;card-container-card&#34;&gt;
+                &lt;div class=&#34;card-container-image-container&#34;&gt;
+                  &lt;span
+                    &gt;&lt;img class=&#34;skill-image&#34; src=&#34;./images/integration.jpg&#34;
+                  /&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;card-container-textblock&#34;&gt;
+                  &lt;strong class=&#34;card-container-textblock-header&#34;
+                    &gt;INTEGRATION&lt;/strong
+                  &gt;
+                  &lt;ul class=&#34;card-container-textblock-content&#34;&gt;
+                    &lt;li&gt;Game Engine Implementation&lt;/li&gt;
+                    &lt;li&gt;Interactive Audio Systems&lt;/li&gt;
+                    &lt;li&gt;Adaptive Music Systems&lt;/li&gt;
+                    &lt;li&gt;Audio Mixing &amp; Mastering&lt;/li&gt;
+                    &lt;li&gt;Ambisonic &amp; Spatial Audio&lt;/li&gt;
+                    &lt;li&gt;Cross-platform Audio Experiences&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+        &lt;!--_____TOOLSET___________________________________________________________________________________--&gt;
+        &lt;h1 class=&#34;section-header&#34;&gt;TOOLSET&lt;/h1&gt;
+        &lt;div class=&#34;toolset&#34;&gt;
+          &lt;div class=&#34;toolset-grid-container&#34;&gt;
+            &lt;div class=&#34;toolset-grid-layout&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;toolset-grid&#34;&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/it/c/cf/REAPER_logo.png&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.reaper.fm/&#34; target=&#34;_blank&#34;&gt;REAPER&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/d/d2/Pro_Tools_2020_Logo.jpg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.avid.com/pro-tools&#34; target=&#34;_blank&#34;
+                      &gt;PRO TOOLS&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://www.audiokinetic.com/jakhub/static/media/wwise_logo_rgb.7e17bcc5.png&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.audiokinetic.com&#34; target=&#34;_blank&#34;
+                      &gt;WWISE&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/en/5/57/FMOD_logo.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.fmod.com&#34; target=&#34;_blank&#34;&gt;FMOD&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/d/da/Unreal_Engine_Logo.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.unrealengine.com&#34; target=&#34;_blank&#34;
+                      &gt;UNREAL&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.unity.com&#34; target=&#34;_blank&#34;&gt;UNITY&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://www.creativefieldrecording.com/wp-content/uploads/2015/04/Soundminer-Logo-with-text.jpg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a
+                      href=&#34;https://store.soundminer.com/collections/all-products/products/soundminer-v6-plus&#34;
+                      target=&#34;_blank&#34;
+                      &gt;SOUNDMINER&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/d/d8/NI_Reaktor_Logo.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a
+                      href=&#34;https://www.native-instruments.com/en/products/komplete/synths/reaktor-6/&#34;
+                      target=&#34;_blank&#34;
+                      &gt;REAKTOR&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/en/8/80/Perforce-Software-Logo.png&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.perforce.com/&#34; target=&#34;_blank&#34;
+                      &gt;PERFORCE&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/8/82/Jira_%28Software%29_logo.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a
+                      href=&#34;https://www.atlassian.com/software/jira&#34;
+                      target=&#34;_blank&#34;
+                      &gt;JIRA&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a
+                      href=&#34;https://en.wikipedia.org/wiki/C%2B%2B&#34;
+                      target=&#34;_blank&#34;
+                      &gt;C++&lt;/a
+                    &gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;tool&#34;&gt;
+                &lt;img
+                  class=&#34;toolset-logo&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg&#34;
+                /&gt;
+                &lt;div class=&#34;tool-overlay&#34;&gt;
+                  &lt;div class=&#34;overlay-text&#34;&gt;
+                    &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;toolset-grid-layout&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--_____TIMELINE___________________________________________________________________________________--&gt;
+        &lt;h1 class=&#34;section-header&#34;&gt;TIMELINE&lt;/h1&gt;
+        &lt;div class=&#34;timeline&#34;&gt;
+          &lt;div class=&#34;timeline-left-content&#34;&gt;
+            &lt;div class=&#34;entries&#34;&gt;
+              &lt;div class=&#34;entry&#34;&gt;
+                &lt;div class=&#34;date-dot&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;date-title&#34;&gt;Present&lt;/div&gt;
+                &lt;div class=&#34;body&#34;&gt;
+                  &lt;div class=&#34;company&#34;&gt;Firewalk Studios&lt;/div&gt;
+                  &lt;div class=&#34;project&#34;&gt;Concord&lt;/div&gt;
+                  &lt;div class=&#34;role&#34;&gt;Senior Technical Audio Designer&lt;/div&gt;
+                  &lt;div class=&#34;description&#34;&gt;
+                    Working with cross-discipline teams to build complex audio
+                    systems for SFX, VO, music, and the dynamic mix
+                  &lt;/div&gt;
+                  &lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://static1.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2024/05/concord-tag-page-cover-art.jpg?q=49&amp;fit=crop&amp;w=480&amp;dpr=2&#34;
+                    alt=&#34;Concord Game&#34;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;entry&#34;&gt;
+                &lt;div class=&#34;date-dot&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;date-title&#34;&gt;2021&lt;/div&gt;
+                &lt;div class=&#34;body&#34;&gt;
+                  &lt;div class=&#34;company&#34;&gt;
+                    Hi-Rez Studios &amp; &lt;br /&gt;Red Beard Games
+                  &lt;/div&gt;
+                  &lt;div class=&#34;project&#34;&gt;Divine Knockout&lt;/div&gt;
+                  &lt;div class=&#34;role&#34;&gt;Audio Lead&lt;/div&gt;
+                  &lt;div class=&#34;description&#34;&gt;
+                    Head of all things audio for Divine Knockout: sound design,
+                    music, dialog, mix, and implementation
+                  &lt;/div&gt;
+                  &lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://assets-prd.ignimgs.com/2022/06/12/dko-button-01as-1654993270862.png&#34;
+                    alt=&#34;Divine Knockout Game&#34;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;entry&#34;&gt;
+                &lt;div class=&#34;date-dot&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;date-title&#34;&gt;2020&lt;/div&gt;
+                &lt;div class=&#34;body&#34;&gt;
+                  &lt;div class=&#34;company&#34;&gt;
+                    Hi-Rez Studios &amp; &lt;br /&gt;First Watch Games
+                  &lt;/div&gt;
+                  &lt;div class=&#34;project&#34;&gt;Rogue Company&lt;/div&gt;
+                  &lt;div class=&#34;role&#34;&gt;Technical Sound Designer&lt;/div&gt;
+                  &lt;div class=&#34;description&#34;&gt;
+                    Creating audio systems for Rogue Company a live service
+                    cross-platform multiplayer shooter
+                  &lt;/div&gt;
+                  &lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://pbs.twimg.com/media/E6vgRywWQAQjJtg.jpg&#34;
+                    alt=&#34;Rogue Comany Game&#34;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;entry&#34;&gt;
+                &lt;div class=&#34;date-dot&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;date-title&#34;&gt;2020&lt;/div&gt;
+                &lt;div class=&#34;body&#34;&gt;
+                  &lt;div class=&#34;company&#34;&gt;Digital Confectioners&lt;/div&gt;
+                  &lt;div class=&#34;project&#34;&gt;Dread Hunger&lt;/div&gt;
+                  &lt;div class=&#34;role&#34;&gt;Audio Lead&lt;/div&gt;
+                  &lt;div class=&#34;description&#34;&gt;
+                    A game of survival and betrayal. Eight Explorers path their
+                    ship through the unforgiving Arctic. Among the crew, two
+                    traitors call on dark powers to undermine them.
+                  &lt;/div&gt;
+                  &lt;img style=&#34;border-radius: .75rem;&#34;
+                  src=&#34;https://upload.wikimedia.org/wikipedia/en/b/b4/Dread_Hunger_cover_art.jpg&#34;&#34;
+                  alt=&#34;Dread Hunger&#34; /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;entry&#34;&gt;
+                &lt;div class=&#34;date-dot&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;date-title&#34;&gt;2018&lt;/div&gt;
+                &lt;div class=&#34;body&#34;&gt;
+                  &lt;div class=&#34;company&#34;&gt;
+                    Blindside Games &amp; Tripwire Interactive
+                  &lt;/div&gt;
+                  &lt;div class=&#34;project&#34;&gt;Maneater&lt;/div&gt;
+                  &lt;div class=&#34;role&#34;&gt;Audio Lead&lt;/div&gt;
+                  &lt;div class=&#34;description&#34;&gt;
+                    Oversee the development of all audio for a single-player
+                    shark RPG game called Maneater before being sold to Tripwire
+                    Interactive
+                  &lt;/div&gt;
+                  &lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://assetsio.gnwcdn.com/co1lx6.jpg?width=1200&amp;height=1200&amp;fit=bounds&amp;quality=70&amp;format=jpg&amp;auto=webp&#34;
+                    alt=&#34;Meaneater Game&#34;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;timeline-right-content&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--_____CLIENTS___________________________________________________________________________________--&gt;
+        &lt;h1 class=&#34;section-header&#34;&gt;I HAVE WORKED WITH&lt;/h1&gt;
+        &lt;div class=&#34;clients&#34;&gt;
+          &lt;div class=&#34;clients-grid-container&#34;&gt;
+            &lt;div class=&#34;clients-grid-layout&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;clients-grid&#34;&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.firewalkstudios.com/&#34;
+                  &gt;&lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://static.wikia.nocookie.net/logopedia/images/6/6f/Firewalk_Studios_logo.svg&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.hirezstudios.com/&#34;
+                  &gt;&lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://webcdn.hirezstudios.com/hirezstudios/cdn/HiRez_Logo_FullLogo_White_72dpi_GT.png&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;div
+                  style=&#34;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  &#34;
+                &gt;
+                  &lt;div
+                    style=&#34;
+                      width: 75%;
+                      height: 75%;
+                      border: 1px solid white;
+                      background-color: white;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    &#34;
+                  &gt;
+                    &lt;a href=&#34;https://www.fullsail.edu/&#34;
+                      &gt;&lt;img
+                        style=&#34;max-width: 90%; max-height: 90%&#34;
+                        src=&#34;https://upload.wikimedia.org/wikipedia/en/7/7d/Full_Sail_University.svg&#34;
+                        alt=&#34;&#34;
+                    /&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.ea.com/sports&#34;
+                  &gt;&lt;img
+                    style=&#34;border-radius: 0.75rem&#34;
+                    src=&#34;https://upload.wikimedia.org/wikipedia/commons/0/0d/Electronic-Arts-Logo.svg&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.marvel.com/&#34;
+                  &gt;&lt;img
+                    src=&#34;https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.tripwireinteractive.com/&#34;
+                  &gt;&lt;img
+                    src=&#34;https://upload.wikimedia.org/wikipedia/commons/8/8e/Tripwire_Interactive_new_logo.png&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;img
+                  src=&#34;http://www.engineaudio.com/assets/images/blindside-logo-copy-512x336-512x336.jpg&#34;
+                  alt=&#34;&#34;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;div
+                  style=&#34;
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  &#34;
+                &gt;
+                  &lt;div
+                    style=&#34;
+                      width: 90%;
+                      height: 90%;
+                      border: 1px solid white;
+                      background-color: white;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    &#34;
+                  &gt;
+                    &lt;a href=&#34;https://digitalconfectioners.com/&#34;
+                      &gt;&lt;img
+                        style=&#34;max-width: 90%; max-height: 90%&#34;
+                        src=&#34;https://www.digitalconfectioners.com/wp-content/themes/digital-confectioners/images/logo.png&#34;
+                        alt=&#34;&#34;
+                    /&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.redbeardgames.com/&#34;
+                  &gt;&lt;img
+                    src=&#34;https://webcdn.hirezstudios.com/redbeardgames/Logos/RBG_Final-14.png&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;client-image&#34;&gt;
+                &lt;a href=&#34;https://www.playfirstwatch.com/&#34;
+                  &gt;&lt;img
+                    src=&#34;https://webcdn.hirezstudios.com/rogue-company/static/first-watch/BigLogo.png&#34;
+                    alt=&#34;&#34;
+                /&gt;&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;clients-grid-layout&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--_____RECENT MEDIA___________________________________________________________________________________--&gt;
+        &lt;h1 class=&#34;section-header&#34;&gt;RECENT PROJECTS&lt;/h1&gt;
+        &lt;div class=&#34;recentmedia&#34;&gt;
+          &lt;div class=&#34;videos-grid-container&#34;&gt;
+            &lt;div class=&#34;videos-grid-video&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;videos-grid-center&#34;&gt;
+              &lt;div class=&#34;recentmedia-header-first&#34;&gt;CONCORD&lt;/div&gt;
+              &lt;div class=&#34;recentmedia-subheader&#34;&gt;
+                Firewalk Studios&lt;br /&gt;Senior Technical Audio Designer
+              &lt;/div&gt;
+              &lt;iframe
+                src=&#34;https://www.youtube.com/embed/7jqQJhjf_3o?si=iaMAdHT5Rx6rFDRv&#34;
+                frameborder=&#34;0&#34;
+                allow=&#34;autoplay; encrypted-media&#34;
+                allowfullscreen
+              &gt;&lt;/iframe&gt;
+              &lt;div class=&#34;recentmedia-header&#34;&gt;Divine Knockout&lt;/div&gt;
+              &lt;div class=&#34;recentmedia-subheader&#34;&gt;
+                Red Beard Games &amp; Hi-Rez Studios&lt;br /&gt;Audio Lead
+              &lt;/div&gt;
+              &lt;iframe
+                src=&#34;https://www.youtube.com/embed/sbap7nTR7xU?si=U93wVYOVWxQic5P0&#34;
+                frameborder=&#34;0&#34;
+                allow=&#34;autoplay; encrypted-media&#34;
+                allowfullscreen
+              &gt;&lt;/iframe&gt;
+              &lt;div class=&#34;recentmedia-header&#34;&gt;Rogue Company&lt;/div&gt;
+              &lt;div class=&#34;recentmedia-subheader&#34;&gt;
+                First Watch Games &amp; Hi-Rez Studios&lt;br /&gt;Senior Technical Sound
+                Designer
+              &lt;/div&gt;
+              &lt;iframe
+                src=&#34;https://www.youtube.com/embed/cwLbCWDntVc?si=fAo6iYZl98PWJReJ&#34;
+                frameborder=&#34;0&#34;
+                allow=&#34;autoplay; encrypted-media&#34;
+                allowfullscreen
+              &gt;&lt;/iframe&gt;
+              &lt;div class=&#34;recentmedia-header&#34;&gt;Dread Hunger&lt;/div&gt;
+              &lt;div class=&#34;recentmedia-subheader&#34;&gt;
+                Digital Confectioners&lt;br /&gt;Audio Lead
+              &lt;/div&gt;
+              &lt;iframe
+                src=&#34;https://www.youtube.com/embed/TI-3h0JXjic?si=xcGD6nL6BcsRaKoJ&#34;
+                frameborder=&#34;0&#34;
+                allow=&#34;autoplay; encrypted-media&#34;
+                allowfullscreen
+              &gt;&lt;/iframe&gt;
+              &lt;div class=&#34;recentmedia-header&#34;&gt;Maneater&lt;/div&gt;
+              &lt;div class=&#34;recentmedia-subheader&#34;&gt;
+                Blindside Games&lt;br /&gt;Audio Lead (purchased by Tripwire
+                Interactive)
+              &lt;/div&gt;
+              &lt;iframe
+                src=&#34;https://www.youtube.com/embed/HCRmiOqUgYQ?si=4eLNDzZ92GQFQSA0&#34;
+                frameborder=&#34;0&#34;
+                allow=&#34;autoplay; encrypted-media&#34;
+                allowfullscreen
+              &gt;&lt;/iframe&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;videos-grid-video&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!--_____FOOTER___________________________________________________________________________________--&gt;
+        &lt;div class=&#34;footer&#34;&gt;
+          &lt;h1 class=&#34;footer-title&#34;&gt;FIND ME ON:&lt;/h1&gt;
+          &lt;div class=&#34;social-icons&#34;&gt;
+            &lt;a href=&#34;https://www.youtube.com/@Latham_Audio&#34;
+              &gt;&lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i
+            &gt;&lt;/a&gt;            
+            &lt;a href=&#34;https://www.linkedin.com/in/lathamaudio&#34;
+              &gt;&lt;i class=&#34;fab fa-linkedin&#34;&gt;&lt;/i
+            &gt;&lt;/a&gt;
+            &lt;a href=&#34;https://github.com/LathamAudio/&#34;
+              &gt;&lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i
+            &gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;h1 class=&#34;footer-title&#34;&gt;OR EMAIL ME:&lt;/h1&gt;
+          &lt;h1 class=&#34;footer-email&#34;&gt;
+            &lt;a href=&#34;mailto: chris@lathamaudio.com&#34;&gt;chris@lathamaudio.com&lt;/a&gt;
+          &lt;/h1&gt;
+          &lt;h1 class=&#34;footer-thanks&#34;&gt;THANKS FOR STOPPING BY!&lt;/h1&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+  </channel>
+</rss>

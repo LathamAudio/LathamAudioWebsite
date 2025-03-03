@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MkDocs on Chris Latham - Technical Audio Designer</title>
+    <link>http://localhost:1313/tags/mkdocs/</link>
+    <description>Recent content in MkDocs on Chris Latham - Technical Audio Designer</description>
+    <image>
+      <title>Chris Latham - Technical Audio Designer</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mkdocs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wwise WWAPI Mind Map</title>
+      <link>http://localhost:1313/posts/0002-wwapi-mindmap/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0002-wwapi-mindmap/</guid>
+      <description>A custom GitHub Action to publish Obsidian notes as a website</description>
+    </item>
+  </channel>
+</rss>

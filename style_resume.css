@@ -1,0 +1,638 @@
+/* ____PAGE_________________________________________________ */
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+  background-color: rgb(46, 46, 46);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f89b41;
+}
+
+.section-header {
+  background-image: url("./images/header-background.jpeg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: scroll;
+  background-size: 2500px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-position: 0% 0%;
+}
+
+.section-wrapper {
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ____HEADER_________________________________________________ */
+
+.header-table {
+  width: 100%;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 10vw;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.07rem;
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 1.5;
+  margin-bottom: 2.3125rem;
+}
+
+.row {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header-table-headshotcell {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-table-infocell {
+  position: relative;
+  text-align: center;
+  float: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.header-headshot {
+  text-align: center;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.header-headshot img {
+  display: block;
+  width: 95%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+/* ____SKILLS_________________________________________________ */
+.section-title {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  font-size: 8vw;
+  color: #f89b41;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.skills {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.section-body {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.section-video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+/* ____EXPERIENCE_________________________________________________ */
+.exp-jobtitle {
+  font-size: 10vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.exp-company {
+  font-size: 8vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.exp-employmentdates {
+  font-size: 7vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.exp-website {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.exp-description {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ____EDUCATION_________________________________________________ */
+.edu-school {
+  font-size: 10vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edu-degree {
+  font-size: 8vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edu-years {
+  font-size: 7vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edu-description {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fade-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #f89b41, transparent 95%);
+}
+
+/* ____PROJECTS_________________________________________________ */
+
+.youtube-video {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: none;
+}
+
+.projects-table {
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.projects-table-infocell {
+  max-width: 300px;
+  text-align: center;
+}
+
+.infocell-game {
+  font-size: 50px;
+  font-weight: 400;
+}
+.infocell-company {
+  font-size: 25px;
+}
+
+.infocell-position {
+  font-size: 25px;
+}
+
+.infocell-link {
+  font-size: 20px;
+}
+
+.vidcell {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  min-width: 300px;
+  overflow-clip-margin: content-box !important;
+  overflow: clip !important;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  min-width: 720px;
+}
+
+.demoreel-table {
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+/* ________RECENT PROJECTS_________________________________________________ */
+.recentprojects-container {
+  width: 100%;
+}
+
+.recentprojects-table {
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.recentprojects-table-vidcell {
+  margin: 0 auto;
+}
+
+.recentprojects-vidcell {
+  width: 100%;
+  aspect-ratio: 16 /9;
+  margin: auto;
+  min-width: 72vw;
+}
+
+.recentprojects-infocell {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.recentprojects-infocell-game {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.recentprojects-infocell-company {
+  font-size: 25px;
+}
+
+.recentprojects-infocell-position {
+  font-size: 25px;
+}
+
+.recentprojects-infocell-link {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .recentprojects-table {
+    display: table;
+  }
+
+  .recentprojects-table-vidcell {
+    display: table-cell;
+  }
+
+  .recentprojects-vidcell {
+    min-width: 540px;
+  }
+
+  .recentprojects-infocell {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    width: 45%;
+  }
+
+  .recentprojects-infocell-link {
+    font-size: 18px;
+  }
+}
+
+.demoreel-container {
+  width: 100%;
+}
+
+.demoreel-table-vidcell {
+  margin: 0 auto;
+}
+
+.demoreel-vidcell {
+  width: 100%;
+  aspect-ratio: 16 /9;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .demoreel-table {
+    width: 60%;
+  }
+}
+
+/* ________PREVIOUS CLIENTS_________________________________________________ */
+.clientgallery-row {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.clientgallery-img {
+  width: 100%;
+  padding-bottom: 8vw;
+}
+
+.clientgallery-FSimg {
+  width: 100%;
+  padding-bottom: 8vw;
+  background-color: white;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .clientgallery-row {
+    width: 60%;
+  }
+  .clientgallery-img {
+    width: 17%;
+    padding: 2vw;
+  }
+
+  .clientgallery-FSimg {
+    width: 17%;
+    padding: 2vw;
+  }
+}
+/* ________SOCIAL ICONS_________________________________________________ */
+
+.social-title {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 8vw;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 5px solid #f89b41;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.email-link {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 8vw;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.email-link a {
+  color: #f89b41;
+}
+
+/* ___MEDIA QUERIES____________________________________________________________ */
+
+@media (min-width: 544px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .exp-jobtitle {
+    font-size: 50px;
+    text-align: left;
+  }
+
+  .exp-company {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .exp-employmentdates {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .exp-website {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .exp-description {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .edu-school {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .edu-degree {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .edu-years {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .edu-description {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .demoreel-table {
+    width: 60%;
+  }
+
+  .social-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .recentprojects-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: scroll;
+    background-size: 2500px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-position: 50% 50%;
+  }
+
+  .header-table-infocell {
+    position: relative;
+    text-align: left;
+  }
+  .header-table {
+    display: table;
+  }
+
+  .header-table-cell {
+    display: table-cell;
+  }
+
+  .header-table-headshotcell {
+    position: relative;
+    display: table-cell;
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 60px;
+    vertical-align: middle;
+    width: 40%;
+  }
+
+  .header-headshot {
+    padding-right: 60px;
+  }
+
+  .header-title {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    white-space: nowrap;
+
+    margin-block-start: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .projects-table {
+    display: table;
+  }
+
+  .projects-table-vidcell {
+    display: table-cell;
+    padding-right: 20px;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: table-cell;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+
+  .projects-table-infocell {
+    display: table-cell;
+    text-align: left;
+    min-width: 200px;
+  }
+
+  .infocell-game {
+    font-size: 40px;
+  }
+
+  .email-link {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 940px;
+  }
+
+  .header-title {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+
+  .lead {
+    font-size: 1.07rem;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 2.3125rem;
+  }
+}

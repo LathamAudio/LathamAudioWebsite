@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Wwise&#43;Wwapi - WwiseTemplateBuilder Script | Chris Latham - Technical Audio Designer</title>
+<meta name="keywords" content="Wwise, WWAPI, Template, Templates, Audiokinetic, Audio, Sound">
+<meta name="description" content="A WAAPI script for importing audio into a pre-existing Wwise template">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/0003-wwisetemplatebuilder/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ea510e526adadc0cdd1d80f2ebb8fe7210143a4c32ff9bf119f3bf771e718aed.css" integrity="sha256-6lEOUmra3AzdHYDy67j&#43;chAUOkwy/5vxGfO/dx5xiu0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/0003-wwisetemplatebuilder/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Latham - Technical Audio Designer (Alt + H)">Chris Latham - Technical Audio Designer</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.lathamaudio.com/" title="Portfolio">
+                    <span>Portfolio</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.lathamaudio.com/latham_resume" title="Resume">
+                    <span>Resume</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Wwise&#43;Wwapi - WwiseTemplateBuilder Script
+    </h1>
+    <div class="post-description">
+      A WAAPI script for importing audio into a pre-existing Wwise template
+    </div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/images/0003-WwiseTemplateBuilder/07-WTBScreenshot.png" alt="">
+        
+</figure>
+  <div class="post-content"><p><strong>WwiseTemplateBuilder</strong> is a command add-on tool written in Python for importing audio into a pre-existing Wwise templates for easy and consistent setup of actor-mixer structures and events. The tool allows users to streamline the process of setting up complex Wwise project structures, making it easier to manage consistent audio implementation across large-scale Wwise projects.</p>
+<ul>
+<li>Do you find yourself building similar structures over and over again in Wwise?</li>
+<li>Do you work with large amount of content that is set up in a similar way (skins, foley, materials)?</li>
+<li>Do you work with an awesome team of audio folks who need more time to focus on creating great sound design and not waste time setting up large or complex Wwise structures?</li>
+</ul>
+<p>Instead you can point this tool at a template Wwise structure, a destination location in Wwise, and your folder of files. WwiseTemplateBuilder will recreate the actor-mixer/event structure in Wwise, then intelligently scan the file names and place them accordingly in the mixer structure. The tool does rely on the file naming to be the same as the intended template for placement of the audio in the actor-mixer structure.</p>
+<h3 id="why-not-just-use-the-template-feature-built-into-wwise-when-importing-audio">Why not just use the template feature built into Wwise when importing audio?</h3>
+<ul>
+<li>Events! Not just for the actor-mixer setup, events can be templated to complete a full setup</li>
+<li>Doesn&rsquo;t require saving files in particular folders</li>
+<li>Doesn&rsquo;t require manual mapping audio files to Wwise structure</li>
+<li>Doesn&rsquo;t require the use of a particular DAW</li>
+<li>Uses file name matching to find proper location for audio in template actor-mixer structure</li>
+</ul>
+<h2 id="overview-video">OVERVIEW VIDEO</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1_J7osMAB8Q?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Actor-Mixer Templates</strong>: Create new actor-mixer structures based on re-usable template</li>
+<li><strong>Event Templates</strong>: Event templates can reference actor-mixer templates to complete a full setup</li>
+<li><strong>String Replacement</strong>: Find and replace strings in templates with user-specified values</li>
+<li><strong>Create Template in Wwise</strong>: Create as many templates as needed directly in Wwise</li>
+</ul>
+<h2 id="installation-video">INSTALLATION VIDEO</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/n6-XA2kPW9M?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Install Python 3.8+ -  Download at <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+<li>Download the WwiseTemplateBuilder_v01 release at <a href="https://github.com/LathamAudio/WwiseTemplateBuilder/releases/tag/v0.1">https://github.com/LathamAudio/WwiseTemplateBuilder/releases/tag/v0.1</a></li>
+<li>Unzip &lsquo;Add-Ons&rsquo; folder to Wwise project folder</li>
+<li>Run <strong>&lsquo;Add-Ons\Scripts\WwiseTemplateBuilder\InstallDependencies.bat&rsquo;</strong> to install python dependencies like pss-pywaapi</li>
+<li>Ensure WAAPI is enabled in Wwise (should be setup by default):
+<ol>
+<li>Open Wwise.</li>
+<li>Go to <strong>User Preferences</strong></li>
+<li>Enable <strong>WAAPI</strong> and confirm the WAMP port is set to 8080 (can be changed in the script on line 608 in main.pyw)</li>
+</ol>
+</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>
+<p><strong>Run the Script</strong>:</p>
+<ul>
+<li>In Wwise, choose &ldquo;WwiseTemplateBuilder&rdquo; from the Scripts pulldown menu</li>
+</ul>
+</li>
+<li>
+<p><strong>Choose Source Template</strong>:</p>
+<ul>
+<li>In Wwise select the actor-mixer structure that will act as the template</li>
+<li>In the WwiseTemplateBuilder tool press the &lsquo;Select Source&rsquo; button to set the path to the source template</li>
+</ul>
+</li>
+<li>
+<p><strong>Choose Destination Location</strong>:</p>
+<ul>
+<li>In Wwise select the actor-mixer object that will act as the destination for the template (typically a folder or work unit)</li>
+<li>In the WwiseTemplateBuilder tool press the &lsquo;Select Destination&rsquo; button to set the path to the detination location</li>
+</ul>
+</li>
+<li>
+<p>Select WAV assets</p>
+<ul>
+<li>Press the &lsquo;Select Folder&rsquo; button in the WwiseTemplateBuilder tool and select the folder of audio assets to import in to the template actor-mixer structure</li>
+</ul>
+</li>
+<li>
+<p>Set the Find &amp; Replace strings</p>
+<ul>
+<li>In the &lsquo;Find&rsquo; field type the string that will be replaced in the template name</li>
+<li>In the &lsquo;Replace&rsquo; field type the string that will replace the find string in the template name</li>
+<li>The application will automatically replace instances of find string in the template names and paths with the replace string, adapting them to your project structure.</li>
+</ul>
+</li>
+<li>
+<p>Preview template</p>
+<ul>
+<li>Pressing the &lsquo;Preview Template&rsquo; button populates the preview pane below with a preview of how the template will look in Wwise</li>
+<li>This will show a preview of the actor-mixer structure will the new names and placement of audio assets in the structure</li>
+</ul>
+</li>
+<li>
+<p>Generate Template</p>
+<ul>
+<li>Pressing the &lsquo;Generate Template&rsquo; button will create the new actor-mixer structure in the destination location that matches the original source structure. The find string will be replaces with the provided replace string. The audio assets are imported into Wwise and placed into the matching actor-mixer structure locations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Template</strong>:</p>
+<ul>
+<li>Switch to the &lsquo;Events&rsquo; tab to use event templates for that reference the actor-mixer templates</li>
+<li>Select the location of the source event template in Wwise and press &lsquo;Select Source&rsquo;</li>
+<li>Select the location of the destination event template in Wwise and press &lsquo;Select Destination&rsquo;</li>
+<li>Select the destination location of target actor-mixer in Wwise and press &lsquo;Select Actor-Mixer&rsquo;, this will set the destination actor-mixer as the target of the event actions instead of the original template to replace the defaults set</li>
+<li>Set the same find &amp; replace strings to replace in the events and actions</li>
+<li>Pressing &lsquo;Preview Template&rsquo; with show a preview of the event template before generation</li>
+<li>Pressing &lsquo;Generate Template&rsquo; will create the resulting event structure in Wwise, replacing any instance of the <code>TEMPLATE</code> string found, and re-targeting event actions to the destination template actor-mixer structure</li>
+</ul>
+</li>
+</ol>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! If you’d like to help improve WwiseTemplateBuilder, please follow these steps:</p>
+<ol>
+<li>Fork the repository.</li>
+<li>Create a new branch with a descriptive name.</li>
+<li>Make your changes and submit a pull request.</li>
+</ol>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<ul>
+<li>Special thanks to
+<ul>
+<li><strong>Audiokinetic</strong> for Wwise and WAAPI.</li>
+<li>Simon Gumbleton for <a href="https://github.com/some_repo">pss_pywaapi</a>, a Python-WAAPI integration.</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+
+  <footer class="post-footer">
+    
+    <div class="post-back-link">
+      <a href="/">← Back</a>
+    </div>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/0004-mountaindragon-unrealproject/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Unreal&#43;Metasounds&#43;Wwise - Mountain Dragon</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/0002-wwapi-mindmap/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Wwise WWAPI Mind Map</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

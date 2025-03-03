@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Unity&#43;Wwise - 3dGameKitWwise | Chris Latham - Technical Audio Designer</title>
+<meta name="keywords" content="3d Game Kit, Unity, Wwise, Sound Design, Sound Effects, Music">
+<meta name="description" content="A Wwise implementation of the 3dGame Kit in the Unity Engine">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/0001-3dgamekitwwise/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ea510e526adadc0cdd1d80f2ebb8fe7210143a4c32ff9bf119f3bf771e718aed.css" integrity="sha256-6lEOUmra3AzdHYDy67j&#43;chAUOkwy/5vxGfO/dx5xiu0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/0001-3dgamekitwwise/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Latham - Technical Audio Designer (Alt + H)">Chris Latham - Technical Audio Designer</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.lathamaudio.com/" title="Portfolio">
+                    <span>Portfolio</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.lathamaudio.com/latham_resume" title="Resume">
+                    <span>Resume</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Unity&#43;Wwise - 3dGameKitWwise
+    </h1>
+    <div class="post-description">
+      A Wwise implementation of the 3dGame Kit in the Unity Engine
+    </div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/images/0001-3dGameKitWwise/3dGameKitWwise.jpg" alt="">
+        
+</figure>
+  <div class="post-content"><h2 id="download-here">DOWNLOAD HERE</h2>
+<p><a href="https://drive.google.com/file/d/12sdJIlbeuURle7mnvwCzz62_KizaedJl/view?usp=sharing">https://drive.google.com/file/d/12sdJIlbeuURle7mnvwCzz62_KizaedJl/view?usp=sharing</a></p>
+<h2 id="intallation">Intallation</h2>
+<ol>
+<li>
+<p>Download &amp; install the Unity Hub at <a href="http://unity.com/">http://unity.com/</a></p>
+</li>
+<li>
+<p>Install Unity 2022.3.59f1</p>
+</li>
+</ol>
+<p>Create 3dGameKitWwise Project
+3. Create a new Unity project using the 3d template, call it something like “3dGameKitWwise” and save it in your favorite file location</p>
+<ol start="4">
+<li>
+<p>Once the project is open navigate to the Asset Store found at <a href="http://assetstore.unity.com">http://assetstore.unity.com</a></p>
+</li>
+<li>
+<p>Search for &ldquo;3d Game Kit&rdquo; in the Unity Asset Store. Download and import it into your project, approving any popups (this can take a while).</p>
+</li>
+</ol>
+<p>Open first 3d Game Kit scene
+6. Once complete you can find and open the Start scene by going to &ldquo;Assets\3dGameKit\Scenes&quot; in the Project window</p>
+<ol start="7">
+<li>
+<p>Try playing 3dGameKit to see if will run by pressing Play button, once successful you can close Unity</p>
+</li>
+<li>
+<p>Download <a href="https://drive.google.com/file/d/12sdJIlbeuURle7mnvwCzz62_KizaedJl/view?usp=sharing">3dGameKitWwise_WwiseProject.zip</a> here and unzip the contents into the 3dGameKitWwise Unity project folder.</p>
+</li>
+</ol>
+<p>Install Wwise
+10. Download &amp; install the Wwise Launcher at <a href="http://www.audiokinetic.com/">http://www.audiokinetic.com/</a></p>
+<ol start="11">
+<li>
+<p>Install Wwise 2019.1.8 You only need to select the Authoring tool &amp; SDK at this time, no plugins are needed for this project</p>
+</li>
+<li>
+<p>In the Wwise Launcher go to the Unity tab and choose &ldquo;Integrate Wwise Into Project&hellip;&rdquo; for the 3dGameKitWwise Unity project</p>
+</li>
+</ol>
+<p>Integrate Wwise Into 3dGameKitWwise Project
+13. You may need to update Wwise to integrate it into the project, press &ldquo;Modify Wwise&hellip;&rdquo;</p>
+<ol start="14">
+<li>
+<p>This will take you back to Wwise install screen with all of the necessary packages and platforms already selected, press &ldquo;Modify&rdquo; and again you don&rsquo;t need to install plugins</p>
+</li>
+<li>
+<p>Once that has completed successfully, press &ldquo;Add WWise to 3dGameKitWwise&rdquo;</p>
+</li>
+<li>
+<p>Next set the Wwise Project Path by navigating to your Unity project and into the 3dGameKitWwise_WwiseProject folder to select the &ldquo;3dGameKitWwise_WwiseProject.wproj&rdquo; file</p>
+</li>
+<li>
+<p>Press the &ldquo;Integrate&rdquo; button to integrate Wwise into the Unity project</p>
+</li>
+</ol>
+<p>Generate Wwise Soundbank
+18. Once complete open the &ldquo;3dGameKitWwise_WwiseProject.wproj&rdquo; session in Wwise. It may ask to update the project, press &ldquo;Yes&rdquo;</p>
+<ol start="19">
+<li>Go to the Soundbank layout and generate the soundbank choosing PC or MAC depending on the platform</li>
+</ol>
+<p>Play and Test 3dGameKitWwise</p>
+<ol start="12">
+<li>
+<p>Open Unity and the 3dGameKitWwise project</p>
+</li>
+<li>
+<p>From Assets-&gt;Import Package-&gt;Custom Package&hellip; choose &lsquo;3dGameKitWwise.unitypackage&rsquo;, and import all assets</p>
+</li>
+<li>
+<p>Open Unity and then open the Start scene. Hit play in Unity to test project and hear audio from Wwise.</p>
+</li>
+<li>
+<p>You can remotely connect Wwise in realtime to profile the audio playing in the game</p>
+</li>
+<li>
+<p>Download the 3dGameKitWwise.zip. This contains the Wwise session and Unity package</p>
+</li>
+<li>
+<p>Download Unity Hub</p>
+</li>
+<li>
+<p>Install Unity 2022</p>
+</li>
+<li>
+<p>Create new Unity project called 3dGameKitWwise</p>
+</li>
+<li>
+<p>Download and install 3dGameKit from Unity Asset Store</p>
+</li>
+<li>
+<p>Close Unity</p>
+</li>
+<li>
+<p>Unzip the provided Wwise session into the new 3dGameKitWwise folder</p>
+</li>
+<li>
+<p>Download the Wwise Launcher</p>
+</li>
+<li>
+<p>Install Wwise 2023</p>
+</li>
+<li>
+<p>Copy 3dGameKitWwise Wwise session into the Unity project folder</p>
+</li>
+<li>
+<p>Integrate Wwise into 3dGameKit Unity project, make sure to reference the 3dGameKitWwise Wwise session</p>
+</li>
+<li>
+<p>Open the 3dGameKitWwise Unity project</p>
+</li>
+<li>
+<p>Run the game to test and profile in Wwise</p>
+</li>
+</ol>
+
+  </div>
+
+  <footer class="post-footer">
+    
+    <div class="post-back-link">
+      <a href="/">← Back</a>
+    </div>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/0003-wwisetemplatebuilder/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Wwise&#43;Wwapi - WwiseTemplateBuilder Script</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/0002-wwapi-mindmap/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Wwise WWAPI Mind Map</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Wwise WWAPI Mind Map | Chris Latham - Technical Audio Designer</title>
+<meta name="keywords" content="Wwise, WAAPI, Audiokinetic, Audio">
+<meta name="description" content="A mindmap layout of the Wwise WWAPI API. Click on the dots to expand the map out further. Drag the canvas to move the map around. Links go to the Audiokinetic documenation">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/0002-wwapi-mindmap/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ea510e526adadc0cdd1d80f2ebb8fe7210143a4c32ff9bf119f3bf771e718aed.css" integrity="sha256-6lEOUmra3AzdHYDy67j&#43;chAUOkwy/5vxGfO/dx5xiu0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/0002-wwapi-mindmap/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Latham - Technical Audio Designer (Alt + H)">Chris Latham - Technical Audio Designer</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.lathamaudio.com/" title="Portfolio">
+                    <span>Portfolio</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.lathamaudio.com/latham_resume" title="Resume">
+                    <span>Resume</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Wwise WWAPI Mind Map
+    </h1>
+    <div class="post-description">
+      A mindmap layout of the Wwise WWAPI API. Click on the dots to expand the map out further. Drag the canvas to move the map around. Links go to the Audiokinetic documenation
+    </div>
+  </header> 
+  <div class="post-content"><style>
+    .main { 
+        max-width: 99vw !important;
+        width: 99vw !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .markmap {
+        height: 700px !important;
+        max-width: 99vw !important;
+        width: 99vw !important;
+        margin-left: auto;
+        margin-right: auto;
+        --markmap-text-color: #ffffff; /* White */
+    }
+</style>
+<script>
+  window.onload = function() {
+    if (!window.markmap || !window.markmap.Markmap) {
+      console.error("Markmap is not loaded!");
+      return;
+    }
+    const markmapCode = document.querySelector("pre > code.markmap");
+    if (!markmapCode) {
+      console.error("Markmap container not found!");
+      return;
+    }
+    const markdown = markmapCode.textContent.trim();
+    console.log("Markmap content:", markdown);
+    if (!markdown) {
+      console.error("Markmap content is empty!");
+      return;
+    }
+
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<pre><code class="markmap">
+    
+---
+markmap:
+  colorFreezeLevel: 5
+  maxWidth: 500
+  initialExpandLevel: 4
+---
+
+# WAAPI
+
+## Functions
+
+-   ak
+    - soundengine
+        - [executeActionOnEvent](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_executeactiononevent.html)
+            - Executes an action on all nodes that are referenced in the specified event in a Play action. See [AK::SoundEngine::ExecuteActionOnEvent](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=classeak_1_1_soundengine.html#a89c09ae51d6893b66a8644af282d6d26).
+        - get
+            - [getState](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_getstate.html)
+                - Gets the current state of a State Group. When using setState just prior to getState, allow a brief delay (no more than 10ms) for the information to update in the sound engine.
+            - [getSwitch](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_getswitch.html)
+                - Gets the current state of a Switch Group for a given Game Object.
+		- post
+			- [postEvent](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_postEvent.html)
+                - Asynchronously post an Event to the sound engine (by event ID). [See AK::SoundEngine::PostEvent](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=namespace_a_k_1_1_sound_engine_a41e9ef8d42951871fe4a8ae58a29a68e.html).
+			- [postMsgMonitor](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_postMsgMonitor.html)
+                - Display a message in the Profiler's Capture Log view.
+			- [postTrigger](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_postTrigger.html)
+                - Posts the specified Trigger. [See AK::SoundEngine::PostTrigger](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=namespace_a_k_1_1_sound_engine_a1cd4b83f1a684a70e009cc9d81bbe57a.html#a1cd4b83f1a684a70e009cc9d81bbe57a).		
+		- [registerGameObj](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_registerGameObj.html)
+			- Register a game object. Registering a game object twice does nothing. Unregistering it once unregisters it no matter how many times it has been registered. See AK::SoundEngine::RegisterGameObj.
+		- [resetRTPCValue](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_resetRTPCValue.html)
+			- Resets the value of a real-time parameter control to its default value, as specified in the Wwise project. See [AK::SoundEngine::ResetRTPCValue](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_reset_resetrtpcvalue.html).
+		- [seekOnEvent](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_seekOnEvent.html)
+			- Seeks inside all playing objects that are referenced in Play Actions of the specified Event. See [AK::SoundEngine::SeekOnEvent](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_seek_seekonevent.html).
+		- set
+			- [setDefaultListeners](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setDefaultListeners.html)
+				- Sets the default active listeners for all subsequent game objects that are registered. See [AK::SoundEngine::SetDefaultListeners](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setdefaultlisteners.html).
+			- [setGameObjectAuxSendValues](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setGameObjectAuxSendValues.html)
+				- Sets the Auxiliary Busses to route the specified game object. See [AK::SoundEngine::SetGameObjectAuxSendValues](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setgameobjectauxsendvalues.html).
+			- [setGameObjectOutputBusVolume](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setGameObjectOutputBusVolume.html)
+				- Set the output bus volume (direct) to be used for the specified game object. See [AK::SoundEngine::SetGameObjectOutputBusVolume](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setgameobjectoutputbusvolume.html).
+			- [setListeners](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setListeners.html)
+				- Sets a single game object's active listeners. By default, all new game objects have no listeners active, but this behavior can be overridden with SetDefaultListeners(). Inactive listeners are not computed. See [AK::SoundEngine::SetListeners](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setlisteners.html).
+			- [setListenerSpatialization](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setListenerSpatialization.html)
+				- Sets a listener's spatialization parameters. This lets you define listener-specific volume offsets for each audio channel. See [AK::SoundEngine::SetListenerSpatialization](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setlistenerspatialization.html).
+			- [setMultiplePositions](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setMultiplePositions.html)
+				- Sets multiple positions for a single game object. Setting multiple positions for a single game object is a way to simulate multiple emission sources while using the resources of only one voice. This can be used to simulate wall openings, area sounds, or multiple objects emitting the same sound in the same area. See [AK::SoundEngine::SetMultiplePositions](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setmultiplepositions.html).
+			- [setObjectObstructionAndOcclusion](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setObjectObstructionAndOcclusion.html)
+				- Set a game object's obstruction and occlusion levels. This function is used to affect how an object should be heard by a specific listener. See [AK::SoundEngine::SetObjectObstructionAndOcclusion](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setobjectobstructionandocclusion.html).
+			- [setPosition](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setPosition.html)
+				- Sets the position of a game object. See [AK::SoundEngine::SetPosition](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setposition.html).
+			- [setRTPCValue](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setRTPCValue.html)
+				- Sets the value of a real-time parameter control. See [AK::SoundEngine::SetRTPCValue](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setrtpcvalue.html).
+			- [setScalingFactor](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setScalingFactor.html)
+				- Sets the scaling factor of a game object. You can modify the attenuation computations on this game object to simulate sounds with a larger or smaller affected area. See [AK::SoundEngine::SetScalingFactor](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setscalingfactor.html).
+			- [setState](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setState.html)
+				- Sets the State of a State Group. See [AK::SoundEngine::SetState](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setstate.html).
+			- [setSwitch](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_setSwitch.html)
+				- Sets the State of a Switch Group. See [AK::SoundEngine::SetSwitch](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_set_setswitch.html).
+		- stop
+			- [stopAll](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_stopAll.html)
+				- Stop playing the current content associated with the specified game object ID. If no game object is specified, all sounds are stopped. See [AK::SoundEngine::StopAll](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_stop_stopall.html).
+			- [stopPlayingID](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_stopPlayingID.html)
+				- Stops the current content associated with the specified playing ID from playing. See [AK::SoundEngine::StopPlayingID](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_stop_stopplayingid.html).
+		- [unregisterGameObj](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_soundengine_unregisterGameObj.html)
+			- Unregisters a game object. Registering a game object twice does nothing. Unregistering it once unregisters it no matter how many times it has been registered. Unregistering a game object while it is in use is allowed, but the control over the parameters of this game object is lost. For example, say a sound associated with this game object is a 3D moving sound. It stops moving when the game object is unregistered, and there is no way to regain control over the game object. See [AK::SoundEngine::UnregisterGameObj](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_aksoundengine_unregister_unregistergameobj.html).	
+	- wwise
+		- core
+			- audio
+				- [import](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_audio_import.html)
+					- Creates Wwise objects and imports audio files. This function uses the same importation processor available through the Tab Delimited import in the Audio File Importer. The function returns an array of all objects created, replaced or re-used. Use the options to specify how the objects are returned. For more information, refer to [Importing Audio Files and Creating Structures](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_functions_index.html#audio-import).
+				- [importTabDelimited](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_audio_importTabDelimited.html)
+					- Scripted object creation and audio file import from a tab-delimited file.
+			- audioSourcePeaks
+				- [getMinMaxPeaksInRegion](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_audiosourcepeaks_getminmaxpeaksinregion.html)
+					- Gets the min/max peak pairs, in the given region of an audio source, as a collection of binary strings (one per channel). The strings are base-64 encoded, 16-bit signed int arrays, with min and max values being interleaved. If getCrossChannelPeaks is true, only one binary string represents the peaks across all channels globally.
+				- [getMinMaxPeaksInTrimmedRegion](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_audiosourcepeaks_getMinMaxPeaksInTrimmedRegion.html)
+					- Gets the min/max peak pairs in the entire trimmed region of an audio source, for each channel, as an array of binary strings (one per channel). The strings are base-64 encoded, 16-bit signed int arrays, with min and max values being interleaved. If getCrossChannelPeaks is true, there is only one binary string representing peaks across all channels globally.
+			- [getInfo](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_getInfo.html)
+				- Retrieve global Wwise information.
+			- [getProjectInfo](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_getProjectInfo.html)
+				- Retrieve information about the current project opened, including platforms, languages and project directories.
+			- log
+				- [get](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_log_get.html)
+					- Retrieves the latest log for a specific channel. Refer to ak.wwise.core.log.itemAdded to be notified when a item is added to the log.
+			- object
+				- [copy](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_copy.html)
+					- Copies an object to the given parent.
+				- [create](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_create.html)
+					- Creates an object of type 'type', as a child of 'parent'. Refer to Importing Audio Files and Creating Structures for more information about creating objects. Also refer to ak.wwise.core.audio.import to import audio files to Wwise.
+				- [delete](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_delete.html)
+					- Deletes the specified object.
+				- [diff](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_diff.html)
+					- Compares properties and lists of the source object with those in the target object.
+				- [get](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_get.html)
+					- Performs a query and returns the data, as specified in the options, for each object in the query result. The query can specify either a 'waql' argument or a 'from' argument with an optional 'transform' argument. Refer to Using the Wwise Authoring Query Language (WAQL) or Querying the Wwise Project for more information. Refer to Return Options to learn about options.
+				- [getAttenuationCurve](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_getAttenuationCurve.html)
+					- Gets the specified attenuation curve for a given attenuation object.
+				- [getPropertyAndReferenceNames](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_getPropertyAndReferenceNames.html)
+					- Retrieves the list of property and reference names for an object.
+				- [getPropertyInfo](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_getPropertyInfo.html)
+					- Retrieves information about an object property. Note that this function does not return the value of a property. To retrieve the value of a property, refer to ak.wwise.core.object.get and Return Options.
+				- [getPropertyNames](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_getPropertyNames.html)
+					- Retrieves the list of all object types registered in Wwise's object model
+				- [getTypes](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_getTypes.html)
+					- Retrieves the list of all object types registered in Wwise's object model. This function returns the equivalent of Wwise Objects Reference.
+				- [isPropertyEnabled](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_isPropertyEnabled.html)
+					- Returns true if a property is enabled based on the values of the properties it depends on.
+				- [move](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_move.html)
+					- Moves an object to the given parent.
+				- [paste properties](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_pasteproperties.html)
+					- Pastes an object as a child of the given parent.
+				- [set](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_set.html)
+					- Allows for batch processing of the following operations: Object creation in a child hierarchy, Object creation in a list, Setting name, notes, properties and references.
+				- [setAttenuationCurve](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_setAttenuationCurve.html)
+					- Sets the specified attenuation curve for a given attenuation object.
+				- [setName](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_setName.html)
+					- Renames an object
+				- [setNotes](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_setNotes.html)
+					- Sets the specified notes for a given object.
+				- [setProperty](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_setProperty.html)
+					- Sets the enabled state of a property based on the values of the properties it depends on.
+				- [setRandomizer](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_setRandomizer.html)
+					- Sets the randomizer values of a property of an object for a specific platform. Refer to Wwise Objects Reference for more information on the properties available on each object type.
+				- [setReference](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_setReference.html)
+					- Sets an object's reference value. Refer to Wwise Objects Reference for more information on the references available on each object type.
+			- profiler
+				- [enableProfilerData](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_enableProfilerData.html)
+					- Specifies the type of data you want to capture. Overrides the user's profiler settings.
+				- [getAudioObjects](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getAudioObjects.html)
+					- Retrieves the Audio Objects at a specific profiler capture time.
+				- [getBusses](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getBusses.html)
+					- Retrieves the busses at a specific profiler capture time.
+				- [getCursorTime](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getCursorTime.html)
+					- Returns the current time of the specified profiler cursor, in milliseconds.
+				- [getGameObjects](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getGameObjects.html)
+					- Retrieves the game objects at a specific profiler capture time.
+				- [getRTPCs](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getRTPCs.html)
+					- Retrieves active RTPCs at a specific profiler capture time.
+				- [getVoiceContributions](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getVoiceContributions.html)
+					- Retrieves all parameters affecting voice volume, highpass and lowpass for a voice path, resolved from pipeline IDs.
+				- [getVoices](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_getVoices.html)
+					- Retrieves the voices at a specific profiler capture time.
+				- [startCapture](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_startCapture.html)
+					- Starts the profiler capture and returns the time at the beginning of the capture, in milliseconds.
+				- [stopCapture](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_stopCapture.html)
+					- Stops the profiler capture and returns the time at the end of the capture, in milliseconds.
+			- project
+				- [save](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_project_save.html)
+					- Saves the current project.
+			- remote
+				- [connect](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_remote_connect.html)
+					- Connects the Wwise Authoring application to a Wwise Sound Engine running executable. The host must be running code with communication enabled. If only "host" is provided, Wwise connects to the first Sound Engine instance found. To distinguish between different instances, you can also provide the name of the application to connect to.
+				- [disconnect](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_remote_disconnect.html)
+					- Disconnects the Wwise Authoring application from a connected Wwise Sound Engine running executable.
+				- [getAvailableConsoles](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_remote_getavailableconsoles.html)
+					- Retrieves all consoles available for connecting Wwise Authoring to a Sound Engine instance.
+				- [getConnectionStatus](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_remote_getconnectionstatus.html)
+					- Retrieves the connection status.
+			- sound
+				- [setActiveSource](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_sound_setactivesource.html)
+					- Sets which version of the source is being used for the specified sound. Use ak.wwise.core.object.get with the 'activeSource' return option to get the active source of a sound.
+			- soundbank
+				- [convertExternalSources](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_convertexternalsources.html)
+					- Converts external sources for all objects in a soundbank to internal sources.
+				- [generate](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_generate.html)
+					- Retrieves a SoundBank's inclusion list.
+				- [getInclusions](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_getInclusions.html)
+					- Generate a list of SoundBank with import definition defined in the WAAPI request. If you choose to not write the SoundBanks to disk, subscribe to ak.wwise.core.soundbank.generated to get SoundBank structure info and the bank data as base64.
+				- [processDefinitionFiles](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_processDefinitionFiles.html)
+					- Imports SoundBank definitions from the specified file. Multiple files can be specified. See the WAAPI log for status messages.
+				- [setInclusions](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_setInclusions.html)
+					- Modifies a SoundBank's inclusion list. The 'operation' argument determines how the 'inclusions' argument modifies the SoundBank's inclusion list; 'inclusions' may be added to / removed from / replace the SoundBank's inclusion list.
+			-   switchContainer
+				-   [addAssignment](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_switchcontainer_addassignment.html)
+					-   Assigns a Switch Container's child to a Switch. This is the equivalent of doing a drag&drop of the child to a state in the Assigned Objects view. The child is always added at the end for each state.
+				-   [getAssignments](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_switchcontainer_getassignments.html)
+					-   Returns the list of assignments between a Switch Container's children and states.
+				-   [removeAssignment](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_switchcontainer_removeassignment.html)
+					-   Removes an assignment between a Switch Container's child and a State.
+			-   transport
+				-   [create](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_create.html)
+					-   Creates a transport object for the given Wwise object. The return transport object can be used to play, stop, pause and resume the Wwise object via the other transport functions.
+				-   [destroy](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_destroy.html)
+					-   Destroys the given transport object.
+				-   [executeAction](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_executeaction.html)
+					-   Executes an action on the given transport object, or all transport objects if none is specified.
+				-   [getList](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_getlist.html)
+					-   Returns the list of transport objects.
+				-   [getState](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_getstate.html)
+					-   Gets the state of the given transport object.
+				-   [prepare](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_prepare.html)
+					-   Prepare the object and its dependencies for playback. Use this function before calling PostEventSync or PostMIDIOnEventSync from IAkGlobalPluginContext.
+			-   undo
+				-   [beginGroup](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_undo_begingroup.html)
+					-   Begins an undo group. Make sure to call ak.wwise.core.undo.endGroup exactly once for every ak.wwise.core.beginUndoGroup call you make. Calls to ak.wwise.core.undo.beginGroup can be nested. When closing a WAMP session, a check is made to ensure that all undo groups are closed. If not, a cancelGroup is called for each of the groups still open.
+				-   [cancelGroup](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_undo_cancelgroup.html)
+					-   Cancels the last undo group. Please note that this does not revert the operations made since the last ak.wwise.core.undo.beginGroup call.
+				-   [endGroup](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_undo_endgroup.html)
+					-   Ends the last undo group.
+				-   [undo](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_undo_undo.html)
+					-   Undoes the last operation in the Undo stack.
+		- debug
+			- [enableAsserts](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_debug_enableasserts.html)
+				- Enables debug assertions. Every call to enableAsserts with 'false' increments the ref count. Calling with true decrements the ref count. This is only available with Debug builds.
+			- [enableAutomationMode](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_debug_enableautomationmode.html)
+				- Enables or disables the automation mode for Wwise. This reduces the potential interruptions caused by message boxes and dialogs. For instance, enabling the automation mode silently accepts: project migration, project load log, EULA acceptance, project license display, and generic message boxes.
+			- [testAssert](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_debug_testassert.html)
+				- Private use only.
+			- [testCrash](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_debug_testcrash.html)
+				- Private use only.
+		- ui
+			- [bringToForeground](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_bringtoforeground.html)
+				- Bring Wwise main window to foreground. Refer to SetForegroundWindow and AllowSetForegroundWindow on MSDN for more information on the restrictions. Refer to ak.wwise.core.getInfo to obtain the Wwise process ID for AllowSetForegroundWindow.
+			- [captureScreen](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_capturescreen.html)
+				- Captures a part of the Wwise UI relative to a view.
+			- commands
+				- [execute](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_commands_execute.html)
+					- Executes a command. Some commands can take a list of objects as parameters. Refer to Wwise Authoring Command Identifiers for the available commands.
+				- [getCommands](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_commands_getcommands.html)
+					- Gets the list of commands.
+				- [register](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_commands_register.html)
+					- Registers an array of add-on commands. Registered commands remain until the Wwise process is terminated. Refer to
+				-   [unregister](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_commands_unregister.html)
+					-   Unregisters an array of add-on UI commands.
+			-   [getSelectedObjects](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_getselectedobjects.html)
+				-   Retrieves the list of objects currently selected by the user in the active view.
+			-   project
+				-   [close](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_project_close.html)
+					-   Closes the current project.
+				-   [open](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_project_open.html)
+					-   Opens a project, specified by path. Please refer to ak.wwise.core.project.loaded for further explanations on how to be notified when the operation has completed.
+		-   waapi
+			-   [getFunctions](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_waapi_getfunctions.html)
+				-   Retrieves the list of functions.
+			-   [getSchema](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_waapi_getschema.html)
+				-   Retrieves the JSON schema of a Waapi URI.
+			-   [getTopics](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_waapi_gettopics.html)
+				-   Retrieves the list of topics to which a client can subscribe.
+
+## Topics
+- ak
+  - wwise
+    - core
+      - audio
+        - [imported](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_audio_imported.html)
+			- Sent at the end of an import operation.
+      - log
+        - [itemAdded](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_log_itemAdded.html)
+			- Sent when an item is added to the log. This could be used to retrieve items added to the SoundBank generation log. To retrieve the complete log, refer to [ak.wwise.core.log.get](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_topics_log_itemadded.html#log-itemadded).
+      - object
+        - [attenuationCurveChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_attenuationCurveChanged.html)
+			-  Sent when an attenuation curve is changed.
+        - [attenuationCurveLinkChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_attenuationCurveLinkChanged.html)
+			- Sent when an attenuation curve's link/unlink is changed.
+        - [childAdded](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_childAdded.html)
+			- Sent when an object is added as a child to another object.
+        - [childRemoved](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_childRemoved.html)
+			- Sent when an object is removed from the children of another object.
+        - [created](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_created.html)
+			- Sent when an object is created.
+        - [curveChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_curveChanged.html)
+			- Sent when one or many curves are changed.
+        - [nameChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_nameChanged.html)
+			- Sent when an object is renamed. Publishes the renamed object.
+        - [notesChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_notesChanged.html)
+			- Sent when the object's notes are changed.
+        - [postDeleted](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_postDeleted.html)
+			- Sent following an object's deletion.
+        - [preDeleted](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_preDeleted.html)
+			- Sent prior to an object's deletion.
+        - [propertyChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_propertyChanged.html)
+			- Sent when the watched property of an object changes.
+        - [referenceChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_object_referenceChanged.html)
+			- Sent when an object reference is changed.
+      - profiler
+        - captureLog
+          - [itemAdded](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_capturelog_itemAdded.html)
+			- Sent when a new entry is added to the capture log. Note that all entries are being sent. No filtering is applied as opposed to the Capture Log view.
+        - [gameObjectRegistered](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_gameObjectRegistered.html)
+			- Sent when a game object has been registered.
+        - [gameObjectReset](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_gameObjectReset.html)
+			- Sent when the game objects have been reset, such as closing a connection to a game while profiling.
+        - [gameObjectUnregistered](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_gameObjectUnregistered.html)
+			- Sent when a game object has been unregistered.
+        - [stateChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_stateChanged.html)
+			- Sent when a state group state has been changed. This subscription does not require the profiler capture log to be started.
+        - [switchChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_profiler_switchChanged.html)
+			- Sent when a switch group state has been changed. This function does not require the profiler capture log to be started.
+      - project
+        - [loaded](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_project_loaded.html)
+			- Sent when the project has been successfully loaded.
+        - [postClosed](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_project_postClosed.html)
+			- Sent after the project is completely closed.
+        - [preClosed](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_project_preClosed.html)
+			- Sent when the project begins closing.
+        - [saved](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_project_saved.html)
+			- Sent when the project has been saved.
+      - soundbank
+        - [generated](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_generated.html)
+			- Sent when a single SoundBank is generated. This could be sent multiple times during SoundBank generation, for every SoundBank generated and for every platform. To generate SoundBanks, refer to [ak.wwise.core.soundbank.generate](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_topics_soundbank-generated.html#soundbank-generated) or [ak.wwise.ui.commands.execute](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_audio_imported.html#commands-executed) with one of the SoundBank generation commands. Refer to Wwise Authoring Command Identifiers for the list of commands.
+        - [generationDone](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_soundbank_generationDone.html)
+			- Sent when all SoundBanks are generated.
+      - switchContainer
+        - [assignmentAdded](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_switchContainer_assignmentAdded.html)
+			- Sent when an assignment is added to a Switch Container.
+        - [assignmentRemoved](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_switchContainer_assignmentRemoved.html)
+			- Sent when an assignment is removed from a Switch Container.
+      - transport
+        - [stateChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_core_transport_stateChanged.html)
+			- Sent when the transport's state has changed.
+	- debug
+		- [assertFailed](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_debug_assertFailed.html)
+			- Sent when an assert has failed. This is only available in Debug builds.
+	- ui
+		- commands
+			- [executed](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_commands_executed.html)
+				- Sent when a command is executed. The objects for which the command is executed are sent in the publication.
+		- [selectionChanged](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=ak_wwise_ui_selectionChanged.html)
+			- Sent when the selection changes in the project.
+
+</code></pre>
+
+  </div>
+
+  <footer class="post-footer">
+    
+    <div class="post-back-link">
+      <a href="/">← Back</a>
+    </div>
+
+  </footer>
+</article>
+    </main>
+    
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

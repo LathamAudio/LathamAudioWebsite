@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Unreal&#43;Wwise - Mountain Dragon | Chris Latham - Technical Audio Designer</title>
+<meta name="keywords" content="Unreal Engine, Audio, Sound Design, GitHub, Game Audio, Wwise, Metasounds">
+<meta name="description" content="An Unreal Project to implement audio for the Mountain Dragon">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/mountaindragon-unrealproject/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ea510e526adadc0cdd1d80f2ebb8fe7210143a4c32ff9bf119f3bf771e718aed.css" integrity="sha256-6lEOUmra3AzdHYDy67j&#43;chAUOkwy/5vxGfO/dx5xiu0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/mountaindragon-unrealproject/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Latham - Technical Audio Designer (Alt + H)">Chris Latham - Technical Audio Designer</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.lathamaudio.com/" title="Portfolio">
+                    <span>Portfolio</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.lathamaudio.com/latham_resume" title="Resume">
+                    <span>Resume</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Unreal&#43;Wwise - Mountain Dragon
+    </h1>
+    <div class="post-description">
+      An Unreal Project to implement audio for the Mountain Dragon
+    </div>
+    <div class="post-meta"><span title='2025-02-01 00:00:00 +0000 UTC'>February 1, 2025</span>
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/images/3dGameKitWwise/3dGameKitWwise2.png" alt="">
+        
+</figure>
+  <div class="post-content"><p>![[03-FireBreathing.png]]</p>
+<p>Have you watched &amp; listened to &lsquo;How To Train Your Dragon&rsquo; or &lsquo;Game of Thrones&rsquo; and thought &ldquo;I could do that!&rdquo; Have you ever wanted to work on improving your creature design chops? Have you wanted to work on implementing your audio in the Unreal Engine with both Metasounds and Wwise to compare them? Are you me, because that is a very specific set of goals? Anyways, here is your chance!</p>
+<p>This is the Mountain Dragon from the Quadraped Fantasy Creatures for the Unreal Engine found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That&rsquo;s where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started.</p>
+<h2 id="setup">Setup<a hidden class="anchor" aria-hidden="true" href="#setup">#</a></h2>
+<h3 id="install-unreal--create-third-person-project">Install Unreal &amp; Create Third Person Project<a hidden class="anchor" aria-hidden="true" href="#install-unreal--create-third-person-project">#</a></h3>
+<p>![[02-ThirdPersonProject 1.png]]</p>
+<ol>
+<li>Download Unreal Engine 5.0 - 5.4 (dragon works in &lt;=5.5, fireball particle works in &lt;=5.4)</li>
+<li>Open Unreal Engine</li>
+<li>Create Third Person Project</li>
+<li>Close Unreal Engine</li>
+</ol>
+<h3 id="install-pre-requisites">Install Pre-Requisites<a hidden class="anchor" aria-hidden="true" href="#install-pre-requisites">#</a></h3>
+<p>![[01-MountainDragon 1.png]]</p>
+<ol>
+<li>
+<p>From Fab.com download &ldquo;Quadraped Fantasy Creatures&rdquo; (This is the dragon)</p>
+<ul>
+<li><a href="https://www.fab.com/listings/52d686b6-1180-4f26-901f-ce3c69a14767">https://www.fab.com/listings/52d686b6-1180-4f26-901f-ce3c69a14767</a></li>
+</ul>
+</li>
+<li>
+<p>From Fab.com download &ldquo;Paragon: Minions&rdquo; (This is the fireball)</p>
+<ul>
+<li><a href="https://www.fab.com/listings/039ea035-9360-4e76-ad06-5d3a92da6f65">https://www.fab.com/listings/039ea035-9360-4e76-ad06-5d3a92da6f65</a></li>
+</ul>
+</li>
+<li>
+<p>From Fab.com, download &ldquo;Realistic Starter VFX Pack Vol 2&rdquo; (This is fire &amp; explosions)</p>
+<ul>
+<li><a href="https://www.fab.com/listings/ac2818b3-7d35-4cf5-a1af-cbf8ff5c61c1">https://www.fab.com/listings/ac2818b3-7d35-4cf5-a1af-cbf8ff5c61c1</a></li>
+</ul>
+</li>
+<li>
+<p>In the Epic Launcher add the Quadraped Fantasy Creatures to your project</p>
+</li>
+<li>
+<p>In the Epic Launcher add the Paragon: Minions to your project</p>
+</li>
+<li>
+<p>In the Epic Launcher add the Realistic Starter VFX Pack Vol 2 to your project</p>
+</li>
+</ol>
+<h3 id="install-metasound-setup">Install Metasound Setup<a hidden class="anchor" aria-hidden="true" href="#install-metasound-setup">#</a></h3>
+<p>![[06-Github 1.png]]</p>
+<ol>
+<li>
+<p>Download &ldquo;UE_MountainDragon_Audio-main.zip&rdquo; from the LathamAudio Github using the green &ldquo;&lt;&gt;Code&rdquo; button</p>
+<ul>
+<li><a href="https://github.com/LathamAudio/UE_MountainDragon_Audio">https://github.com/LathamAudio/UE_MountainDragon_Audio</a></li>
+</ul>
+</li>
+<li>
+<p>Unzip the &ldquo;MountainDragon&rdquo; &amp; &ldquo;QuadrapedCreatures&rdquo; folders to your Content folder in your Unreal project</p>
+</li>
+</ol>
+<h3 id="setup-moutain-dragon">Setup Moutain Dragon<a hidden class="anchor" aria-hidden="true" href="#setup-moutain-dragon">#</a></h3>
+<p>![[04-DefaultPawn.png]]</p>
+<ol>
+<li>Open your Unreal project</li>
+<li>Open &ldquo;BP_ThirdPersonGameMode&rdquo; and change the Default Pawn to be &ldquo;MountainDragon_BP&rdquo;</li>
+</ol>
+<h3 id="adding-to-other-maps">Adding to other maps<a hidden class="anchor" aria-hidden="true" href="#adding-to-other-maps">#</a></h3>
+<p>![[05-OtherMaps 1.png]]</p>
+<h2 id="controls">Controls<a hidden class="anchor" aria-hidden="true" href="#controls">#</a></h2>
+<p>W - Move Foward
+S - Move Back
+A - Move Left
+D - Move Right
+E - Fly/Land
+Shift - Glide
+Left Click - Bite/Claw on Ground, Fireball in Air
+Righ Click - Breathe Fire</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    
+    <div class="post-back-link">
+      <a href="/">← Back</a>
+    </div>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/wwisetemplatebuilder/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Wwise&#43;Wwapi - WwiseTemplateBuilder Script</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

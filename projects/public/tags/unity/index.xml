@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unity on Chris Latham - Technical Audio Designer</title>
+    <link>http://localhost:1313/tags/unity/</link>
+    <description>Recent content in Unity on Chris Latham - Technical Audio Designer</description>
+    <image>
+      <title>Chris Latham - Technical Audio Designer</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity&#43;Wwise - 3dGameKitWwise</title>
+      <link>http://localhost:1313/posts/0001-3dgamekitwwise/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0001-3dgamekitwwise/</guid>
+      <description>A Wwise implementation of the 3dGame Kit in the Unity Engine</description>
+    </item>
+  </channel>
+</rss>
