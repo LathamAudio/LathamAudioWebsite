@@ -83,7 +83,7 @@ Shift - Glide\
 Left Click - Bite/Claw on Ground, Fireball in Air\
 Righ Click - Breathe Fire
 
-![Mountain Dragon in Maps](/images/0004-MountainDragon/MountainDragon.gif)
+<!-- ![Mountain Dragon in Maps](/images/0004-MountainDragon/MountainDragon.gif) -->
 ## Adding the Mountain Dragon to other maps
 Now that we have a dragon that can walk, fly, attack, breathe fire, launch fireballs we don't just want to use the test environment. The "Stylized Fantasy Provencal" environment is an appropriate setting for testing out your dragon sound design.
 1. From Fab.com download "**Stylized Fantasy Provencal**", and add it to your project
