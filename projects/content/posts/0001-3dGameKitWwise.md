@@ -5,7 +5,7 @@ date: 2024-11-01
 draft: true
 tags: ["3d Game Kit", "Unity", "Wwise", "Sound Design", "Sound Effects", "Music"]
 cover:
-    image: "/images/0001-3dGameKitWwise/3dGameKitWwise.jpg"
+    image: "/projects/images/0001-3dGameKitWwise/3dGameKitWwise.jpg"
 summary: "Unity's 3d Game Kit + Audiokinetic's Wwise"
 ---
 ## DOWNLOAD HERE 

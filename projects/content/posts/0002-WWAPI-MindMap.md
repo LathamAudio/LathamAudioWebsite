@@ -5,7 +5,7 @@ date: 2024-06-01
 draft: false
 tags: ["Wwise", "WAAPI", "Audiokinetic", "Audio"]
 cover:
-    image: "/images/0002-WWAPI-Mindmap/WAAPI_Mindmap_Cover.png"
+    image: "/projects/images/0002-WWAPI-Mindmap/WAAPI_Mindmap_Cover.png"
 summary: "A mindmap layout of the Wwise WWAPI API"
 cover.hiddenInSingle: true
 ---

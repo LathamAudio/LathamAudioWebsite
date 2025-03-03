@@ -5,7 +5,7 @@ date: 2025-02-01
 draft: true
 tags: ["Unreal Engine", "Audio", "Sound Design", "GitHub", "Game Audio", "Wwise", "Metasounds"]
 cover:
-    image: "/images/0004-MoutainDragon/DragonCover2.png"
+    image: "/projects/images/0004-MoutainDragon/DragonCover2.png"
 summary: "An Unreal Project to implement audio for the Mountain Dragon creature"
 ---
 Have you watched & listened to 'How To Train Your Dragon' or 'Game of Thrones' and thought "I could do that!" Have you ever wanted to work on improving your creature design chops? Have you wanted to work on implementing your audio in the Unreal Engine with both Metasounds and Wwise to compare them? Are you me, because that is a very specific set of goals? Anyways, here is your chance!

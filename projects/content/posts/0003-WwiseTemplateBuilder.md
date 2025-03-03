@@ -5,7 +5,7 @@ date: 2024-12-01
 draft: true
 tags: ["Wwise", "WWAPI", "Template", "Templates", "Audiokinetic", "Audio", "Sound"]
 cover:
-    image: "/images/0003-WwiseTemplateBuilder/07-WTBScreenshot.png"
+    image: "/projects/images/0003-WwiseTemplateBuilder/07-WTBScreenshot.png"
 summary: "A WAAPI script for importing audio into a pre-existing Wwise template"
 ---
 
