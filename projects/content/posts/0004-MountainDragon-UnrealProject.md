@@ -2,7 +2,7 @@
 title: "Unreal+Metasounds+Wwise - Mountain Dragon"
 description: "An Unreal Project to implement audio for the Mountain Dragon creature"
 date: 2025-02-01
-draft: true
+draft: false
 tags: ["Unreal Engine", "Audio", "Sound Design", "GitHub", "Game Audio", "Wwise", "Metasounds"]
 cover:
     image: "/projects/images/0004-MoutainDragon/DragonCover2.png"
