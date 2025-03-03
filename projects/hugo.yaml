@@ -1,4 +1,6 @@
 baseURL: https://www.lathamaudio.com/projects/
+RelativeURLs=true
+CanonifyURLs=true
 languageCode: en-us
 title: Chris Latham - Technical Audio Designer
 theme: ["PaperMod"]
