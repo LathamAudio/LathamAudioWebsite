@@ -115,14 +115,14 @@
         
 </figure>
   <div class="post-content"><p>Have you watched &amp; listened to &lsquo;How To Train Your Dragon&rsquo; or &lsquo;Game of Thrones&rsquo; and thought &ldquo;I could do that!&rdquo; Have you ever wanted to work on improving your creature design chops? Have you wanted to work on implementing your audio in the Unreal Engine with both Metasounds and Wwise to compare them? Are you me, because that is a very specific set of goals? Anyways, here is your chance!</p>
-<p>This is the Mountain Dragon from the Quadraped Fantasy Creatures for the Unreal Engine found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That&rsquo;s where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started.</p>
+<p>This is the Mountain Dragon from the Quadraped Fantasy Creatures pack for the Unreal Engine, found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That&rsquo;s where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started.</p>
 <h1 id="setup">Setup</h1>
 <p><img alt="Third Person Project" loading="lazy" src="/projects/images/0004-MountainDragon/ThirdPersonProject.png"></p>
 <h2 id="install-unreal--create-third-person-project">Install Unreal &amp; Create Third Person Project</h2>
 <ol>
 <li>Download Unreal Engine 5.0 - 5.4 (dragon works in UE5.5 or less, but fireball particle only works in UE5.4 or less)</li>
 <li>Open Unreal Engine</li>
-<li>Create Third Person Project</li>
+<li>Create a new Third Person project</li>
 <li>Close Unreal Engine
 <br>
 <br>
@@ -173,7 +173,7 @@
 </ul>
 </li>
 <li>
-<p>Unzip the &ldquo;MountainDragon&rdquo; &amp; &ldquo;QuadrapedCreatures&rdquo; folders to your Content folder in your Unreal project</p>
+<p>Find the &ldquo;MountainDragon&rdquo; &amp; &ldquo;QuadrapedCreatures&rdquo; folders in the downloaded .zip file and unzip them to the Content folder in your Unreal project overwriting any files</p>
 </li>
 <li>
 <p>Skip over the Wwise section below and go to <a href="/projects/posts/0004-mountaindragon-unrealproject/#setup-moutain-dragon-pawn">Setup the Mountain Dragon Pawn</a> section to proceed.</p>
@@ -207,7 +207,7 @@
 <p>No Wwise plugins are needed for this setup</p>
 </li>
 <li>
-<p>Back in the &ldquo;UE_MountainDragon_Wwise-main.zip&rdquo; unzip &ldquo;Content&rdquo; folder into your Unreal project</p>
+<p>Back in the &ldquo;UE_MountainDragon_Wwise-main.zip&rdquo; find the &ldquo;MountainDragon&rdquo; &amp; &ldquo;QuadrapedCreatures&rdquo; folders in the Content folder and unzip them to the Content folder in your Unreal project overwriting any filesunzip &ldquo;Content&rdquo; folder into your Unreal project</p>
 </li>
 <li>
 <p>Proceed to <a href="/projects/posts/0004-mountaindragon-unrealproject/#setup-moutain-dragon-pawn">Setup the Mountain Dragon Pawn</a></p>
@@ -217,7 +217,7 @@
 <h2 id="setup-moutain-dragon-pawn">Setup Moutain Dragon Pawn</h2>
 <ol>
 <li>Open your Unreal project</li>
-<li>Open &ldquo;BP_ThirdPersonGameMode&rdquo; and change the Default Pawn to be &ldquo;MountainDragon_BP&rdquo;</li>
+<li>In the Contnet Browser, open &ldquo;BP_ThirdPersonGameMode&rdquo; and change the Default Pawn to be &ldquo;MountainDragon_BP&rdquo;</li>
 </ol>
 <h2 id="controls">Controls</h2>
 <p>W - Move Foward<br>
@@ -230,7 +230,7 @@ Left Click - Bite/Claw on Ground, Fireball in Air<br>
 Righ Click - Breathe Fire</p>
 <!-- ![Mountain Dragon in Maps](/projects/images/0004-MountainDragon/MountainDragon.gif) -->
 <h2 id="adding-the-mountain-dragon-to-other-maps">Adding the Mountain Dragon to other maps</h2>
-<p>Now that we have a dragon that can walk, fly, attack, breathe fire, launch fireballs we don&rsquo;t just want to use the test environment. The &ldquo;Stylized Fantasy Provencal&rdquo; environment is an appropriate setting for testing out your dragon sound design.</p>
+<p>Now that we have a dragon that can walk, fly, attack, breathe fire, launch fireballs we don&rsquo;t just want to use the test third person map. The &ldquo;Stylized Fantasy Provencal&rdquo; level is an appropriate looking setting for testing out your dragon sound design.</p>
 <ol>
 <li>From Fab.com download &ldquo;<strong>Stylized Fantasy Provencal</strong>&rdquo;, and add it to your project
 <ul>
@@ -240,6 +240,7 @@ Righ Click - Breathe Fire</p>
 <li>Open the &ldquo;Main&rdquo; level located in &ldquo;StylizedProvencal/Maps&rdquo;</li>
 <li>With the Default Pawn set in the Game Mode set you should be able to download envoronments from Fab.com and use the Mountain Dragon in all of them!</li>
 </ol>
+<h3 id="next-up-working-with-metasounds-and-wwise-to-add-your-own-sound-design">Next up&hellip; working with Metasounds and Wwise to add your own sound design!</h3>
 <h2 id="if-you-have-any-questions-contact-me-at-chrislathamaudiocommailtochrislathamaudiocom">If you have any questions contact me at: <a href="mailto:chris@lathamaudio.com">chris@lathamaudio.com</a></h2>
 
   </div>

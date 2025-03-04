@@ -10,7 +10,7 @@ summary: "An Unreal Project to implement audio for the Mountain Dragon creature"
 ---
 Have you watched & listened to 'How To Train Your Dragon' or 'Game of Thrones' and thought "I could do that!" Have you ever wanted to work on improving your creature design chops? Have you wanted to work on implementing your audio in the Unreal Engine with both Metasounds and Wwise to compare them? Are you me, because that is a very specific set of goals? Anyways, here is your chance!
 
-This is the Mountain Dragon from the Quadraped Fantasy Creatures for the Unreal Engine found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That's where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started. 
+This is the Mountain Dragon from the Quadraped Fantasy Creatures pack for the Unreal Engine, found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That's where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started. 
 
 # Setup
 ![Third Person Project](/projects/images/0004-MountainDragon/ThirdPersonProject.png)
@@ -18,7 +18,7 @@ This is the Mountain Dragon from the Quadraped Fantasy Creatures for the Unreal 
 ## Install Unreal & Create Third Person Project
 1. Download Unreal Engine 5.0 - 5.4 (dragon works in UE5.5 or less, but fireball particle only works in UE5.4 or less)
 2. Open Unreal Engine
-3. Create Third Person Project
+3. Create a new Third Person project
 4. Close Unreal Engine
 \
 \
@@ -50,8 +50,8 @@ At this point it is time to download the audio setup for the Mountain Dragon and
 1. Download "UE_MountainDragon_Audio-main.zip" from the LathamAudio Github using the green "<>Code" button
 	- https://github.com/LathamAudio/UE_MountainDragon_Audio
 
-2. Unzip the "MountainDragon" & "QuadrapedCreatures" folders to your Content folder in your Unreal project
-4. Skip over the Wwise section below and go to [Setup the Mountain Dragon Pawn](#setup-moutain-dragon-pawn) section to proceed.
+2. Find the "MountainDragon" & "QuadrapedCreatures" folders in the downloaded .zip file and unzip them to the Content folder in your Unreal project overwriting any files
+3. Skip over the Wwise section below and go to [Setup the Mountain Dragon Pawn](#setup-moutain-dragon-pawn) section to proceed.
 
 ![Mountain Dragon Wwise](/projects/images/0004-MountainDragon/Wwise_MountainDragon.png)
 ## Download Wwise Audio Setup
@@ -61,17 +61,21 @@ At this point it is time to download the audio setup for the Mountain Dragon and
 2. Unzip the "UE_MTNDragon_Wwise_WwiseProject" folder to your Unreal project folder. This contains the Wwise project. Do not unzip the "Content" folder yet.
 3. Open the Wwise Launcher
 4. In the Unreal Engine tab find your project and choose "Integrate Wwise in Project..."
-5. Choose the version of Wwise you would like to use
+5. The included Wwise projects was created in Wwise 2024.1.2, so choose that version or newer to integrate
 6. Set the "UE_MTNDragon_Wwise_WwiseProject" path in the Wwise Project field
-7. No Wwise plugins are needed for this setup
-8. Back in the "UE_MountainDragon_Wwise-main.zip" unzip "Content" folder into your Unreal project
-9. Proceed to [Setup the Mountain Dragon Pawn](#setup-moutain-dragon-pawn)
+7. Once the integration is complete open the Wwise project and generate the soundbanks for your platform 
+8. Back in the "UE_MountainDragon_Wwise-main.zip" unzip the "Content" folder into your Unreal project overwriting any files, this adds the audio changes to work with Wwise
+9. Open you Unreal project
+10. Open the Project Setting from Edit->Project Settings...
+11. Scroll down and find Wwise->Integrations Settings
+12. Set the Root Output Path to the "GeneratedSoundBanks" folder in the Wwise project
+13. Proceed to [Setup the Mountain Dragon Pawn](#setup-moutain-dragon-pawn)
 
 
 ![Mountain Dragon Github](/projects/images/0004-MountainDragon/DefaultPawn.png)
 ## Setup Moutain Dragon Pawn
 1. Open your Unreal project
-2. Open "BP_ThirdPersonGameMode" and change the Default Pawn to be "MountainDragon_BP"
+2. In the Contnet Browser, open "BP_ThirdPersonGameMode" and change the Default Pawn to be "MountainDragon_BP"
 
 ## Controls
 W - Move Foward\
@@ -85,12 +89,12 @@ Righ Click - Breathe Fire
 
 <!-- ![Mountain Dragon in Maps](/projects/images/0004-MountainDragon/MountainDragon.gif) -->
 ## Adding the Mountain Dragon to other maps
-Now that we have a dragon that can walk, fly, attack, breathe fire, launch fireballs we don't just want to use the test environment. The "Stylized Fantasy Provencal" environment is an appropriate setting for testing out your dragon sound design.
+Now that we have a dragon that can walk, fly, attack, breathe fire, launch fireballs we don't just want to use the test third person map. The "Stylized Fantasy Provencal" level is an appropriate looking setting for testing out your dragon sound design.
 1. From Fab.com download "**Stylized Fantasy Provencal**", and add it to your project
 	- https://www.fab.com/listings/ced19ea1-31ed-437f-ae64-2b6b1561fede
 2. Open the "Main" level located in "StylizedProvencal/Maps"
 3. With the Default Pawn set in the Game Mode set you should be able to download envoronments from Fab.com and use the Mountain Dragon in all of them!
 
-
+### Next up... working with Metasounds and Wwise to add your own sound design!
 
 ## If you have any questions contact me at: [chris@lathamaudio.com](mailto:chris@lathamaudio.com)
