@@ -27,19 +27,18 @@ Create 3dGameKitWwise Project
 
 5. Search for "3d Game Kit" in the Unity Asset Store. Download and import it into your project, approving any popups (this can take a while).
 
+6. Close Unity
+
 
 Open first 3d Game Kit scene 
-6. Once complete you can find and open the Start scene by going to "Assets\3dGameKit\Scenes\" in the Project window
 
-7. Try playing 3dGameKit to see if will run by pressing Play button, once successful you can close Unity
-
-8. Download [3dGameKitWwise_WwiseProject.zip](https://drive.google.com/file/d/12sdJIlbeuURle7mnvwCzz62_KizaedJl/view?usp=sharing) here and unzip the contents into the 3dGameKitWwise Unity project folder.
+7. Download [3dGameKitWwise_WwiseProject.zip](https://drive.google.com/file/d/12sdJIlbeuURle7mnvwCzz62_KizaedJl/view?usp=sharing) here and unzip the contents into the your Unity project folder.
 
 
 Install Wwise
 10. Download & install the Wwise Launcher at http://www.audiokinetic.com/
 
-11. Install Wwise 2019.1.8 You only need to select the Authoring tool & SDK at this time, no plugins are needed for this project
+11. Install Wwise 2024.1.2 You only need to select the Authoring tool & SDK at this time, no plugins are needed for this project
 
 12. In the Wwise Launcher go to the Unity tab and choose "Integrate Wwise Into Project..." for the 3dGameKitWwise Unity project
 
@@ -57,7 +56,7 @@ Integrate Wwise Into 3dGameKitWwise Project
 
 
 Generate Wwise Soundbank
-18. Once complete open the "3dGameKitWwise_WwiseProject.wproj" session in Wwise. It may ask to update the project, press "Yes"
+18. Once complete open the "3dGameKitWwise_WwiseProject.wproj" session in Wwise. Go ahead and migrate the project if it asks.
 
 19. Go to the Soundbank layout and generate the soundbank choosing PC or MAC depending on the platform
 
@@ -69,7 +68,15 @@ Play and Test 3dGameKitWwise
 
 12. From Assets->Import Package->Custom Package... choose '3dGameKitWwise.unitypackage', and import all assets
 
-23. Open Unity and then open the Start scene. Hit play in Unity to test project and hear audio from Wwise.
+23. In the Project browser navigate "/Assets/3dGamekit/Scenes" and open the "Start" scene. Hit play in Unity to test project and hear audio from Wwise.
+
+12. In the Heirarchy tab find the "WwiseGlobal" game object and select it
+
+12. In the Inspector press Add Component and select AkBank
+
+12. Select "No soundbank currently selected" and choose the "Soundbank_3dGameKitWwise" soundbank
+
+12. Press play in Unity and test out the sounds
 
 24. You can remotely connect Wwise in realtime to profile the audio playing in the game
 

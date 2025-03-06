@@ -8,10 +8,11 @@ cover:
     image: "/projects/images/0004-MoutainDragon/DragonCover2.png"
 summary: "An Unreal Project to implement audio for the Mountain Dragon creature"
 ---
-Have you watched & listened to 'How To Train Your Dragon' or 'Game of Thrones' and thought "I could do that!" Have you ever wanted to work on improving your creature design chops? Have you wanted to work on implementing your audio in the Unreal Engine with both Metasounds and Wwise to compare them? Are you me, because that is a very specific set of goals? Anyways, here is your chance!
+Have you watched & listened to 'How To Train Your Dragon' or 'Game of Thrones' and thought "I could do that!" Have you ever wanted to work on improving your creature design chops? Have you wanted to work on implementing your audio in the Unreal Engine with both Metasounds and Wwise to compare them? Are you me, because that is a very specific set of goals!? Anyways, here is your chance!
 
-This is the Mountain Dragon from the Quadraped Fantasy Creatures pack for the Unreal Engine, found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That's where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started. 
+This is the Mountain Dragon from the Quadruped Fantasy Creatures pack for the Unreal Engine, found on Fab.com. It comes as a set of creatures that have all the textures, animations, and skeletal mesh needed to get started but no audio! That's where we come in. I have set up the Mountain Dragon with basic movement, flying, and attack controls and setup the audio hooks to implement your own sound design. Follow the steps below to get started. 
 
+{{< youtube GgTwtZLwwcI >}}
 # Setup
 ![Third Person Project](/projects/images/0004-MountainDragon/ThirdPersonProject.png)
 
@@ -25,7 +26,7 @@ This is the Mountain Dragon from the Quadraped Fantasy Creatures pack for the Un
 \
 ![Mountain Dragon](/projects/images/0004-MountainDragon/QuadrapedFantasyCreature.png)
 ## Install Pre-Requisites
-1. From Fab.com download "**Quadraped Fantasy Creatures**" (This is the dragon)
+1. From Fab.com download "**Quadruped Fantasy Creatures**" (This is the dragon)
 	- https://www.fab.com/listings/52d686b6-1180-4f26-901f-ce3c69a14767
 
 2. From Fab.com download "**Paragon: Minions**" (This is the fireball)
@@ -34,7 +35,7 @@ This is the Mountain Dragon from the Quadraped Fantasy Creatures pack for the Un
 3. From Fab.com, download "**Realistic Starter VFX Pack Vol 2**" (This is fire & explosions)
 	- https://www.fab.com/listings/ac2818b3-7d35-4cf5-a1af-cbf8ff5c61c1
 
-4. In the Epic Launcher add the Quadraped Fantasy Creatures to your project
+4. In the Epic Launcher add the Quadruped Fantasy Creatures to your project
 5. In the Epic Launcher add the Paragon: Minions to your project
 6. In the Epic Launcher add the Realistic Starter VFX Pack Vol 2 to your project
   
@@ -50,7 +51,7 @@ At this point it is time to download the audio setup for the Mountain Dragon and
 1. Download "UE_MountainDragon_Audio-main.zip" from the LathamAudio Github using the green "<>Code" button
 	- https://github.com/LathamAudio/UE_MountainDragon_Audio
 
-2. Find the "MountainDragon" & "QuadrapedCreatures" folders in the downloaded .zip file and unzip them to the Content folder in your Unreal project overwriting any files
+2. Find the "MountainDragon" & "QuadrupedCreatures" folders in the downloaded .zip file and unzip them to the Content folder in your Unreal project overwriting any files
 3. Skip over the Wwise section below and go to [Setup the Mountain Dragon Pawn](#setup-moutain-dragon-pawn) section to proceed.
 
 ![Mountain Dragon Wwise](/projects/images/0004-MountainDragon/Wwise_MountainDragon.png)
