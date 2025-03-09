@@ -94,7 +94,7 @@ Now that we have a dragon that can walk, fly, attack, breathe fire, launch fireb
 1. From Fab.com download "**Stylized Fantasy Provencal**", and add it to your project
 	- https://www.fab.com/listings/ced19ea1-31ed-437f-ae64-2b6b1561fede
 2. Open the "Main" level located in "StylizedProvencal/Maps"
-3. With the Default Pawn set in the Game Mode set you should be able to download envoronments from Fab.com and use the Mountain Dragon in all of them!
+3. With the Default Pawn set in the Game Mode set you should be able to download environments from Fab.com and use the Mountain Dragon in all of them!
 
 ### Next up... working with Metasounds and Wwise to add your own sound design!
 
