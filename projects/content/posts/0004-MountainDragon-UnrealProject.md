@@ -17,7 +17,7 @@ This is the Mountain Dragon from the Quadruped Fantasy Creatures pack for the Un
 ![Third Person Project](/projects/images/0004-MountainDragon/ThirdPersonProject.png)
 
 ## Install Unreal & Create Third Person Project
-1. Download Unreal Engine 5.0 - 5.4 (dragon works in UE5.5 or less, but fireball particle only works in UE5.4 or less)
+1. Download Unreal Engine 5.4
 2. Open Unreal Engine
 3. Create a new Third Person project
 4. Close Unreal Engine
